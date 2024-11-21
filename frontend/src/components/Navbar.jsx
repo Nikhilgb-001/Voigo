@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-gray-300 text-black p-4">
+    <div className="bg-white text-black p-4">
       <div className="flex justify-between px-2 items-center">
         {/* Logo */}
         <Link to={"/"} className="logo text-4xl font-bold text-center">

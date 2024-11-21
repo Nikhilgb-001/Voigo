@@ -149,8 +149,19 @@
 // export default AboutUs;
 
 import React from "react";
+import { FaUsers, FaRocket, FaCheckCircle } from "react-icons/fa";
+import { MdOutlineKeyboardVoice } from "react-icons/md";
 
 const AboutUs = () => {
+  const FeatureCard = ({ icon, title, description }) => {
+    return (
+      <div className="text-center p-6 border rounded-lg shadow-md bg-white">
+        <div className="text-yellow-500 mb-4">{icon}</div>
+        <h3 className="text-lg font-semibold mb-2">{title}</h3>
+        <p className="text-gray-600">{description}</p>
+      </div>
+    );
+  };
   return (
     <section className="bg-gray-100 py-12 px-6 sm:px-12">
       <div className="max-w-7xl mx-auto text-center space-y-8">
@@ -159,7 +170,10 @@ const AboutUs = () => {
           <h1 className="text-4xl font-bold text-gray-800">About Us</h1>
           <p className="mt-4 text-gray-600">
             Welcome to Voigo – your new, hassle-free, voice-activated delivery
-            service designed to make life easier.
+            service designed to make life easier. At Voigo, we believe in the
+            power of simplicity, convenience, and community. Our goal is to
+            provide you with a personalized shopping experience that allows you
+            to get what you need quickly, all by simply speaking your request.
           </p>
         </div>
 
@@ -173,11 +187,15 @@ const AboutUs = () => {
               Voigo is more than just a delivery service; we’re on a mission to
               redefine the way you shop. With a simple voice command, we bring
               you anything you need, straight from your local stores, ensuring
-              that you never have to compromise on convenience.
+              that you never have to compromise on convenience. We’ve built our
+              platform to make everyday shopping faster, easier, and more
+              accessible – without any added complexity. By removing the need
+              for browsing lists and menus, we’re bringing a human touch to
+              technology.
             </p>
           </div>
           <img
-            src="./src/assets/image-1.jpg"
+            src="https://thecsrjournal.in/wp-content/uploads/2023/07/Community-Empowerment.jpg"
             className="rounded-lg shadow-lg sm:w-1/2"
           />
         </div>
@@ -185,76 +203,48 @@ const AboutUs = () => {
         {/* Supporting Local Stores */}
         <div className="flex flex-col sm:flex-row items-center gap-8">
           <img
-            src="./src/assets/image-3.jpg"
+            src="https://static.vecteezy.com/system/resources/previews/023/482/745/non_2x/support-local-business-rubber-grunge-stamp-seal-vector.jpg"
             alt="Local business"
             className="rounded-lg shadow-lg sm:w-1/2"
           />
           <div className="sm:w-1/2">
             <h2 className="text-2xl font-semibold text-gray-800">
-              Supporting Local Stores, Empowering Communities
+              Supporting Local Businesses, Empowering Communities
             </h2>
             <p className="mt-4 text-gray-600 text-left">
-              Strong communities are built on strong local businesses. That’s
-              why Voigo partners with local stores to fulfill your orders,
-              helping them thrive in the digital world.
+              We know that strong communities are built on strong local
+              businesses. That’s why Voigo partners with local stores to fulfill
+              your orders, helping them thrive in the digital world. By choosing
+              to shop with us, you’re not just getting your items delivered;
+              you're supporting the businesses that make your community unique.
             </p>
           </div>
         </div>
 
         {/* Why Choose Us */}
-        <div>
-          <h2 className="text-2xl font-semibold text-gray-800">
+        <div className="mt-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-900 mb-8">
             Why Choose Voigo?
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-            {/* Feature 1 */}
-            <div className="bg-white shadow-md rounded-lg p-6 text-center">
-              <img src="./src/assets/image-1.jpg" className="mx-auto mb-4" />
-              <h3 className="text-lg font-medium text-gray-800">
-                Voice-Activated Convenience
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Simply say what you need, and we’ll make it happen.
-              </p>
-            </div>
-            {/* Feature 2 */}
-            <div className="bg-white shadow-md rounded-lg p-6 text-center">
-              <img
-                src="./src/assets/image-1.jpg"
-                alt="Same-Day Delivery"
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-lg font-medium text-gray-800">
-                Same-Day Delivery
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Get your items delivered fast with our local partnerships.
-              </p>
-            </div>
-            {/* Feature 3 */}
-            <div className="bg-white shadow-md rounded-lg p-6 text-center">
-              <img src="./src/assets/image-1.jpg" className="mx-auto mb-4" />
-              <h3 className="text-lg font-medium text-gray-800">
-                Supporting Local Businesses
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Help local stores grow and thrive by shopping with us.
-              </p>
-            </div>
-            {/* Feature 4 */}
-            <div className="bg-white shadow-md rounded-lg p-6 text-center">
-              <img
-                src="./src/assets/image-1.jpg"
-                alt="Free Delivery"
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-lg font-medium text-gray-800">
-                Free Delivery
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Enjoy more value with free delivery for every order.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <FeatureCard
+              icon={
+                <MdOutlineKeyboardVoice size={40} className="text-orange-500" />
+              }
+              title="Voice-Activated Ease"
+              description="Voice-Activated Convenience: Simply say what you need, and we’ll make it happen. No need to scroll through long lists or search for products – just tell us what you want, and we’ll deliver."
+            />
+            <FeatureCard
+              icon={<FaUsers size={40} className="text-green-500" />}
+              title="Supporting  Local Businesses"
+              description=" When you shop with Voigo, you help local stores grow and thrive. Together, we’re building a stronger, more connected community
+"
+            />
+            <FeatureCard
+              icon={<FaCheckCircle size={40} className="text-yellow-500" />}
+              title="Free Delivery"
+              description="We believe in offering more value to our customers. That’s why we provide free delivery for every order, making shopping even more accessible."
+            />
           </div>
         </div>
       </div>
