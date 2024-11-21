@@ -19,14 +19,12 @@ const Footer = () => {
               Socials
             </h4>
             {["instagram", "twitter", "facebook"].map((item, index) => (
-              <a
-                href="/coming-soon"
-                target="_blank"
-                key={index}
+              <Link
+                to="/coming-soon"
                 className="mt-2 block text-zinc-600 text-sm capitalize text-center sm:text-left"
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </div>
 

@@ -4,21 +4,21 @@ const DeliveryCards = () => {
   const cards = [
     {
       image:
-        "https://drive.google.com/file/d/1H7ProoeJ8PZnG7nxPCetVfLiCB4exQC8/view?usp=drive_link",
+        "https://github.com/Nikhilgb-001/Voigo/blob/main/frontend/src/assets/image-1.jpg?raw=true",
       title: "Say what you want",
       description:
         "Your voice, your choice. Simply say it, and we’ll deliver it to your doorstep!",
     },
     {
       image:
-        "https://drive.google.com/file/d/1RKeDhjxsZqniavInDG2BL45JShNGP1A7/view?usp=drive_link",
+        "https://github.com/Nikhilgb-001/Voigo/blob/main/frontend/src/assets/image-3.jpg?raw=true",
       title: "See real-time updates",
       description:
         "Track your order every step of the way, from placing it to delivery.",
     },
     {
       image:
-        "https://drive.google.com/file/d/1PE0gHT3DQxebJZ7Kf3m-iptl-C-JFZTy/view?usp=drive_link",
+        "https://github.com/Nikhilgb-001/Voigo/blob/main/frontend/src/assets/delivery.jpg?raw=true",
       title: "Fast and Reliable Delivery",
       description:
         "Count on us to bring your items quickly and efficiently, straight from local stores near you",
