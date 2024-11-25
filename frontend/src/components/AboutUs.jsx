@@ -155,7 +155,7 @@ import { MdOutlineKeyboardVoice } from "react-icons/md";
 const AboutUs = () => {
   const FeatureCard = ({ icon, title, description }) => {
     return (
-      <div className="text-center p-6 border rounded-lg shadow-md bg-white">
+      <div id="about-us" className="text-center p-6 border rounded-lg shadow-md bg-white">
         <div className="text-yellow-500 mb-4">{icon}</div>
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>

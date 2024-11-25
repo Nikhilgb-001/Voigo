@@ -41,15 +41,6 @@ const Navbar = () => {
           >
             About Us
           </ScrollLink>
-          <ScrollLink
-            to="shop-section"
-            smooth={true}
-            duration={500}
-            offset={-50}
-            className="hover:text-green-900 font-semibold cursor-pointer"
-          >
-            Shop
-          </ScrollLink>
         </div>
 
         {/* Hamburger Icon */}
