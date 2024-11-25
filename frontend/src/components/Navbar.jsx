@@ -13,8 +13,12 @@ const Navbar = () => {
     <div className="bg-white text-black p-4">
       <div className="flex justify-between px-2 items-center">
         {/* Logo */}
-        <Link to={"/"} className="logo text-4xl font-bold text-center">
-          Voigo
+        <Link to={"/"} className="logo">
+          <img
+            src="./assets/voigo"
+            alt="Voigo Logo"
+            className="h-10 w-auto md:h-12"
+          />
         </Link>
 
         {/* Navigation Links */}
