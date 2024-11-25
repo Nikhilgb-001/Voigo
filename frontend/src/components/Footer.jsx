@@ -24,7 +24,7 @@ const Footer = () => {
             </h4>
             {["instagram", "twitter", "facebook"].map((item, index) => (
               <Link
-              key={index}
+                key={index}
                 to="/coming-soon"
                 className="mt-2 block text-zinc-600 text-sm capitalize text-center sm:text-left"
               >
@@ -38,7 +38,7 @@ const Footer = () => {
             <h4 className="mb-6 text-zinc-500 capitalize text-center sm:text-left">
               Links
             </h4>
-            {["home", "about", "contact"].map((item, index) => (
+            {["home", "about"].map((item, index) => (
               <Link
                 to="/"
                 key={index}
