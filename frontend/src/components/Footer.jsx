@@ -6,9 +6,13 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto py-10 px-4 flex flex-col md:flex-row gap-16 md:gap-10">
         {/* Left Section */}
         <div className="basis-full md:basis-1/2 flex justify-center md:justify-start">
-          <h1 className="logo text-5xl md:text-[7rem] lg:text-[11.5rem] tracking-tight font-semibold leading-none text-center md:text-left">
-            voigo
-          </h1>
+          <Link to={"/"} className="logo">
+            <img
+              src="https://github.com/Nikhilgb-001/Voigo/blob/main/frontend/src/assets/Voigo_logo.png?raw=true"
+              alt="Voigo Logo"
+              className="h-52 w-full"
+            />
+          </Link>
         </div>
 
         {/* Right Section */}

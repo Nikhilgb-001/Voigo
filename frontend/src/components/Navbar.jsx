@@ -15,7 +15,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to={"/"} className="logo">
           <img
-            src="./assets/voigo"
+            src="https://github.com/Nikhilgb-001/Voigo/blob/main/frontend/src/assets/Voigo_logo.png?raw=true"
             alt="Voigo Logo"
             className="h-10 w-auto md:h-12"
           />
@@ -59,7 +59,7 @@ const Navbar = () => {
             className="text-white hover:text-green-400 focus:outline-none"
           >
             <svg
-              className="w-6 h-6"
+              className="w-6 h-6 text-zinc-800"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
