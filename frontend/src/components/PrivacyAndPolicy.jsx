@@ -12,7 +12,7 @@ const PrivacyAndPolicy = () => {
             Privacy Policy
           </h1>
           <p className="text-sm text-gray-500 text-center mb-6">
-            Last Updated: {new Date().toLocaleDateString()}
+            Last Updated: 11/25/2024
           </p>
 
           <p className="text-gray-700 mb-4">
@@ -91,12 +91,13 @@ const PrivacyAndPolicy = () => {
                 requests and process orders.
               </li>
               <li>
-                Retention: Voice recordings are deleted immediately after you
-                approve the delivered products.
+                Retention: Voice recordings are retained for up to 7 days to
+                improve the Service and are automatically deleted after this
+                period.
               </li>
               <li>
                 Use: Voice data is analyzed solely for improving Service
-                accuracy.
+                accuracy and user experience.
               </li>
               <li>
                 Consent: By using voice commands, you consent to the collection
@@ -134,7 +135,7 @@ const PrivacyAndPolicy = () => {
                 unauthorized access, alteration, or disclosure.
               </li>
               <li>
-                Secure servers and encryption protocols for sensitive
+                Secure servers and encryption protocols are used for sensitive
                 information.
               </li>
               <li>Regular app security audits and updates.</li>
@@ -157,11 +158,8 @@ const PrivacyAndPolicy = () => {
               </li>
               <li>
                 Data Deletion: You may request the deletion of your account and
-                personal data at any time.
-              </li>
-              <li>
-                Voice recordings are automatically deleted once the order is
-                finalized.
+                personal data at any time. Voice recordings are automatically
+                deleted after 7 days.
               </li>
               <li>
                 Withdraw Consent: You may stop using the Service if you no
@@ -198,7 +196,25 @@ const PrivacyAndPolicy = () => {
             </ul>
           </Section>
 
-          <Section title="10. Changes to This Privacy Policy">
+          <Section title="10. Intellectual Property and Usage Restrictions">
+            <ul className="list-disc ml-6">
+              <li>
+                <strong>10.1. Voigo Logo and Branding:</strong> The Voigo logo,
+                name, and any associated trademarks, service marks, or other
+                intellectual property (collectively referred to as "Voigo
+                Marks") are the exclusive property of Voigo.
+              </li>
+              <li>
+                <strong>10.2. Content Ownership:</strong> All content,
+                materials, features, and functionality available on the Voigo
+                app, including but not limited to text, graphics, images, logos,
+                videos, and software, are the property of Voigo or its
+                licensors.
+              </li>
+            </ul>
+          </Section>
+
+          <Section title="11. Changes to This Privacy Policy">
             <p>
               We may update this Privacy Policy from time to time to reflect
               changes in our practices or legal requirements. Updates will be
@@ -206,28 +222,10 @@ const PrivacyAndPolicy = () => {
             </p>
           </Section>
 
-          <Section title="11. Contact Us">
+          <Section title="12. Contact Us">
             <ul className="list-disc ml-6">
               <li>Email: voigoapp@gmail.com</li>
-              <li>Phone: 9573623377</li>
-            </ul>
-          </Section>
-
-          <Section title="12. Intellectual Property and Usage Restrictions">
-            <ul className="list-disc ml-6">
-              <li>
-                <strong>12.1. Voigo Logo and Branding:</strong> The Voigo logo,
-                name, and any associated trademarks, service marks, or other
-                intellectual property (collectively referred to as "Voigo
-                Marks") are the exclusive property of Voigo.
-              </li>
-              <li>
-                <strong>12.2. Content Ownership:</strong> All content,
-                materials, features, and functionality available on the Voigo
-                app, including but not limited to text, graphics, images, logos,
-                videos, and software, are the property of Voigo or its
-                licensors.
-              </li>
+              <li>Phone: 9573623377, 9544147335</li>
             </ul>
           </Section>
         </div>

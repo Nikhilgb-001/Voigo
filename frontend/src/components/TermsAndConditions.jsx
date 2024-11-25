@@ -2,6 +2,15 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+const Section = ({ title, children }) => (
+  <div className="mb-6">
+    <h2 className="text-lg lg:text-xl font-semibold text-gray-800 mb-4">
+      {title}
+    </h2>
+    <div className="text-gray-700">{children}</div>
+  </div>
+);
+
 const TermsAndConditions = () => {
   return (
     <>
@@ -12,7 +21,7 @@ const TermsAndConditions = () => {
             Terms and Conditions
           </h1>
           <p className="text-sm text-gray-500 text-center mb-6">
-            Last Updated: {new Date().toLocaleDateString()}
+            Last Updated: 11/25/2024
           </p>
 
           <p className="text-gray-700 mb-4">
@@ -190,25 +199,24 @@ const TermsAndConditions = () => {
           </Section>
 
           <Section title="7. Refund and Cancellation Policy">
-            <p>
-              Refunds are applicable under the following conditions:
-              <ul className="list-disc ml-6">
-                <li>
-                  Products delivered are defective, incorrect, or damaged.
-                </li>
-                <li>
-                  The service fails to meet user expectations during delivery.
-                </li>
-              </ul>
-              Refunds will be issued immediately upon reporting discrepancies to
-              the delivery partner, provided the claim is valid.
-              <br />
-              <strong>Cancellations:</strong> Currently, we do not offer a
-              cancellation feature for orders once placed. Users are encouraged
-              to verify all order details before confirming their purchase to
-              ensure accuracy. Once the order is confirmed or dispatched, it
-              cannot be canceled.
-            </p>
+            <ul className="list-disc ml-6">
+              <li>
+                Refunds are applicable under the following conditions:
+                <ul className="list-disc ml-6">
+                  <li>
+                    Products delivered are defective, incorrect, or damaged.
+                  </li>
+                  <li>
+                    The service fails to meet user expectations during delivery.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Cancellations: Currently, we do not offer a cancellation feature
+                for orders once placed. Verify all order details before
+                confirming.
+              </li>
+            </ul>
           </Section>
 
           <Section title="8. Delivery Policy">
@@ -228,30 +236,14 @@ const TermsAndConditions = () => {
           <Section title="9. Data Privacy and Security">
             <ul className="list-disc ml-6">
               <li>
-                <strong>Data Collection and Use:</strong>
-                <ul className="list-disc ml-6">
-                  <li>
-                    Voigo collects data such as account details, order history,
-                    and voice commands to improve Service quality.
-                  </li>
-                  <li>
-                    By using voice commands, you consent to the collection and
-                    processing of your voice data for order accuracy.
-                  </li>
-                </ul>
+                Data Collection and Use: Voigo collects data such as account
+                details, order history, and voice commands to improve Service
+                quality.
               </li>
               <li>
-                <strong>Data Retention:</strong>
-                <ul className="list-disc ml-6">
-                  <li>
-                    Voice recordings are deleted immediately after you approve
-                    the delivered products.
-                  </li>
-                  <li>
-                    Voigo complies with applicable data protection laws,
-                    including the Information Technology Act, 2000 (India).
-                  </li>
-                </ul>
+                Voice Data Retention: Voice commands are stored for up to 7 days
+                to improve user experience and service accuracy. After 7 days,
+                all voice recordings are permanently deleted.
               </li>
               <li>
                 Third-Party Sharing: Your data may be shared with delivery
@@ -283,30 +275,24 @@ const TermsAndConditions = () => {
               <li>
                 Voigo facilitates transactions between users and local stores.
               </li>
-              <li>We are not liable for quality or safety of products.</li>
+              <li>We are not liable for the quality or price of products.</li>
               <li>
-                Voigo provides no warranties or guarantees about the accuracy of
-                product descriptions, pricing, or availability.
+                Users must inspect all items upon receipt to ensure satisfaction
+                and accuracy.
               </li>
             </ul>
           </Section>
 
-          <Section title="13. Limitation of Liability">
+          <Section title="Contact Us">
             <p>
-              Voigo is not responsible for any indirect or consequential losses
-              arising from the use of the Service or technical issues, including
-              app unavailability or errors.
+              For questions or concerns about these Terms and Conditions, please
+              contact us at:
             </p>
-          </Section>
-
-          <Section title="14. User Support">
-            <p>
-              For inquiries, complaints, or support:
-              <br />
-              <strong>Email:</strong> <a href="#"> voigoapp@gmail.com</a>
-              <br />
-              <strong>Phone:</strong> 9573623377
-            </p>
+            <address>
+              <strong>Email:</strong> support@voigo.app <br />
+              <strong>Phone:</strong> +91-9876543210 <br />
+              <strong>Address:</strong> Voigo Support Center, India
+            </address>
           </Section>
         </div>
       </div>
@@ -314,12 +300,5 @@ const TermsAndConditions = () => {
     </>
   );
 };
-
-const Section = ({ title, children }) => (
-  <div className="mb-6">
-    <h2 className="text-2xl font-semibold mb-3">{title}</h2>
-    <div className="text-gray-700">{children}</div>
-  </div>
-);
 
 export default TermsAndConditions;

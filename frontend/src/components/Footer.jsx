@@ -24,6 +24,7 @@ const Footer = () => {
             </h4>
             {["instagram", "twitter", "facebook"].map((item, index) => (
               <Link
+              key={index}
                 to="/coming-soon"
                 className="mt-2 block text-zinc-600 text-sm capitalize text-center sm:text-left"
               >
@@ -65,6 +66,20 @@ const Footer = () => {
                 className="mt-2 block text-zinc-600 text-sm capitalize text-center sm:text-left"
               >
                 Privacy and Policy
+              </Link>
+
+              <Link
+                to="/CancellationAndRefundPolicy"
+                className="mt-2 block text-zinc-600 text-sm capitalize text-center sm:text-left"
+              >
+                Cancellation And RefundPolicy
+              </Link>
+
+              <Link
+                to="/contact-us"
+                className="mt-2 block text-zinc-600 text-sm capitalize text-center sm:text-left"
+              >
+                Contact us
               </Link>
             </span>
           </div>

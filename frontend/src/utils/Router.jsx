@@ -3,7 +3,6 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import DeliveryCards from "../components/DeliveryCards";
-import QRBanner from "../components/QRBanner";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import TermsAndConditions from "../components/TermsAndConditions";
@@ -11,6 +10,8 @@ import ComingSoon from "../components/ComingSoon";
 import PrivacyAndPolicy from "../components/PrivacyAndPolicy";
 import TimeCard from "../components/TimeCard";
 import AboutUs from "../components/AboutUs";
+import CancellationAndRefundPolicy from "../components/CancellationAndRefundPolicy";
+import ContactUs from "../components/ContactUs";
 
 const Router = () => {
   const location = useLocation();
@@ -39,6 +40,14 @@ const Router = () => {
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       <Route path="/coming-soon" element={<ComingSoon />} />
       <Route path="/privacy-policy" element={<PrivacyAndPolicy />} />
+      <Route
+        path="/CancellationAndRefundPolicy"
+        element={<CancellationAndRefundPolicy />}
+      />
+      <Route
+        path="/contact-us"
+        element={<ContactUs />}
+      />
     </Routes>
   );
 };
