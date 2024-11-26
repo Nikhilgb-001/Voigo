@@ -170,7 +170,7 @@ const PrivacyAndPolicy = () => {
 
           <Section title="7. Children’s Privacy">
             <p>
-              Voigo is not intended for use by individuals under the age of 13.
+              Voigo is not intended for use by individuals under the age of 3+.
               We do not knowingly collect personal information from children.
             </p>
           </Section>
