@@ -41,13 +41,10 @@ const Router = () => {
       <Route path="/coming-soon" element={<ComingSoon />} />
       <Route path="/privacy-policy" element={<PrivacyAndPolicy />} />
       <Route
-        path="/CancellationAndRefundPolicy"
+        path="/Cancellation-and-refund-policy"
         element={<CancellationAndRefundPolicy />}
       />
-      <Route
-        path="/contact-us"
-        element={<ContactUs />}
-      />
+      <Route path="/contact-us" element={<ContactUs />} />
     </Routes>
   );
 };

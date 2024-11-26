@@ -69,7 +69,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                to="/CancellationAndRefundPolicy"
+                to="/Cancellation-and-refund-policy"
                 className="mt-2 block text-zinc-600 text-sm capitalize text-center sm:text-left"
               >
                 Cancellation And RefundPolicy
