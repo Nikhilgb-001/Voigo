@@ -10,12 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white text-black p-4">
+    <div className="bg-[#172554] text-white p-4">
       <div className="flex justify-between px-2 items-center">
         {/* Logo */}
         <Link to={"/"} className="logo">
           <img
-            src="https://github.com/Nikhilgb-001/Voigo/blob/main/frontend/src/assets/Voigo_logo.png?raw=true"
+            src="https://github.com/Nikhilgb-001/voigo/blob/main/frontend/src/assets/Voigo%20logo%20new.png?raw=true"
             alt="Voigo Logo"
             className="h-10 w-auto md:h-12"
           />

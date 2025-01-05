@@ -25,7 +25,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="bg-blue-950 text-white py-20 flex flex-col justify-center items-center">
+    <div className="bg-white text-zinc-700 py-20 flex flex-col justify-center items-center">
       <AnimatePresence mode="wait">
         <motion.h1
           key={currentIndex} // Ensure Framer Motion treats text changes as unique

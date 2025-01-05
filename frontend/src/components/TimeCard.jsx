@@ -15,9 +15,11 @@ const TimeCard = () => {
     if (!targetTime) {
       // If not, set target time to 7 days from now and store it in localStorage
       targetTime = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
-      localStorage.setItem("targetTime", targetTime); 
-    } else {
+      localStorage.setItem("targetTime", targetTime);
+    } else if (targetTime) {
       targetTime = parseInt(targetTime, 10); // Convert to integer
+    } else {
+      targetTime = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
     }
 
     const countdown = setInterval(() => {
