@@ -13,7 +13,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-    }, 4000); 
+    }, 4000);
     return () => clearInterval(interval);
   }, [textArray.length]);
 
@@ -25,22 +25,30 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="bg-white text-zinc-700 py-20 flex flex-col justify-center items-center">
-      <AnimatePresence mode="wait">
-        <motion.h1
-          key={currentIndex} // Ensure Framer Motion treats text changes as unique
-          className="text-xl p-3  lg:text-3xl font-bold text-center"
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          variants={textVariants}
-          transition={{
-            duration: 0.8, // Animation duration for each phase
-          }}
-        >
-          {textArray[currentIndex]}
-        </motion.h1>
-      </AnimatePresence>
+    <div className="text-zinc-700 px-3 h-fit flex flex-col justify-center items-center">
+      <div
+        className="relative w-full h-full p-5 lg:p-10 rounded-lg bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://github.com/Nikhilgb-001/voigo/blob/main/frontend/src/assets/banner.png?raw=true')",
+        }}
+      >
+        <AnimatePresence mode="wait">
+          <motion.h1
+            key={currentIndex} // Ensure Framer Motion treats text changes as unique
+            className="text-xl p-3 lg:text-3xl font-bold text-center"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={textVariants}
+            transition={{
+              duration: 0.8, // Animation duration for each phase
+            }}
+          >
+            {textArray[currentIndex]}
+          </motion.h1>
+        </AnimatePresence>
+      </div>
     </div>
   );
 };

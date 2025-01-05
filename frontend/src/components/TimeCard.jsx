@@ -9,17 +9,19 @@ const TimeCard = () => {
   });
 
   useEffect(() => {
-    // Check if the target time is already stored in localStorage
+    const startTimer = () => {
+      const newTargetTime = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
+      localStorage.setItem("targetTime", newTargetTime);
+      return newTargetTime;
+    };
+
+    // Retrieve or initialize the target time
     let targetTime = localStorage.getItem("targetTime");
 
     if (!targetTime) {
-      // If not, set target time to 7 days from now and store it in localStorage
-      targetTime = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
-      localStorage.setItem("targetTime", targetTime);
-    } else if (targetTime) {
-      targetTime = parseInt(targetTime, 10); // Convert to integer
+      targetTime = startTimer();
     } else {
-      targetTime = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
+      targetTime = parseInt(targetTime, 10); // Convert to integer
     }
 
     const countdown = setInterval(() => {
@@ -33,8 +35,8 @@ const TimeCard = () => {
         const seconds = Math.floor((difference / 1000) % 60);
         setTimeLeft({ days, hours, minutes, seconds });
       } else {
-        clearInterval(countdown);
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        // Reset the timer for another 7 days
+        targetTime = startTimer();
       }
     }, 1000);
 
