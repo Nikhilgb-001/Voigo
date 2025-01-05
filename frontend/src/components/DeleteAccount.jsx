@@ -36,7 +36,7 @@ const DeleteAccount = () => {
               <div className="mt-4 h-fit rounded-lg flex items-center justify-center">
                 {/* <image src="" /> */}
                 <img
-                  src="https://github.com/thesolomon1331/Voigo/blob/main/frontend/src/assets/delete-image-1.jpeg?raw=true"
+                  src="https://github.com/Nikhilgb-001/voigo/blob/main/frontend/src/assets/del-1.jpg?raw=true"
                   className="rounded-lg shadow-lg sm:w-1/2"
                 />
               </div>
@@ -55,7 +55,7 @@ const DeleteAccount = () => {
               </p>
               <div className="mt-4 h-fit rounded-lg flex items-center justify-center">
                 <img
-                  src="https://github.com/thesolomon1331/Voigo/blob/main/frontend/src/assets/delete-image-2.jpeg?raw=true"
+                  src="https://github.com/Nikhilgb-001/voigo/blob/main/frontend/src/assets/del-2.jpg?raw=true"
                   className="rounded-lg shadow-lg sm:w-1/2"
                 />
               </div>
