@@ -84,7 +84,7 @@ const PrivacyAndPolicy = () => {
             </ul>
           </Section>
 
-          <Section title="3. Voice Data Policy">
+          <Section title="3. Data Retention and collection policy">
             <ul className="list-disc ml-6">
               <li>
                 Collection: Voice commands are recorded to understand your
@@ -92,8 +92,7 @@ const PrivacyAndPolicy = () => {
               </li>
               <li>
                 Retention: Voice recordings are retained for up to 7 days to
-                improve the Service and are automatically deleted after this
-                period.
+                improve the Service.
               </li>
               <li>
                 Use: Voice data is analyzed solely for improving Service
@@ -170,7 +169,7 @@ const PrivacyAndPolicy = () => {
 
           <Section title="7. Children’s Privacy">
             <p>
-              Voigo is not intended for use by individuals under the age of 3+.
+              Voigo is not intended for use by individuals under the age of 12+.
               We do not knowingly collect personal information from children.
             </p>
           </Section>
