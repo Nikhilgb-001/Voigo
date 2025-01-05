@@ -23,15 +23,15 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-6">
-          <ScrollLink
-            to="hero-section"
+          <Link
+            to="/"
             smooth={true}
             duration={500}
             offset={-50}
             className="hover:text-green-900 font-semibold cursor-pointer"
           >
             Home
-          </ScrollLink>
+          </Link>
           <ScrollLink
             to="about-us"
             smooth={true}
@@ -71,7 +71,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="mt-4 space-y-2 md:hidden">
           <ScrollLink
-            to="hero-section"
+            to="home"
             smooth={true}
             duration={500}
             offset={-50}

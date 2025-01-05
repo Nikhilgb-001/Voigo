@@ -10,8 +10,8 @@ const Support = () => {
   return (
     <>
       <Navbar />
-      <div className="h-fit bg-gradient-to-br from-blue-100 to-indigo-300 flex flex-col items-center py-10">
-        <h1 className="text-4xl font-bold text-indigo-800 mb-8">Support Us</h1>
+      <div className="h-fit bg-white flex flex-col items-center py-10">
+        <h1 className="text-4xl font-bold text-indigo-800 mb-8">Support</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl px-4">
           {/* Card 1 */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition-transform duration-300 flex flex-col justify-between">

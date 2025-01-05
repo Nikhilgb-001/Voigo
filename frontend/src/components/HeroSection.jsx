@@ -25,7 +25,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="text-zinc-700 px-3 h-fit flex flex-col justify-center items-center">
+    <div className="home text-zinc-700 px-3 h-fit flex flex-col justify-center items-center">
       <div
         className="relative w-full h-full p-5 lg:p-10 rounded-lg bg-cover bg-center"
         style={{

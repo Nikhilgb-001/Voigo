@@ -25,7 +25,7 @@ const Footer = () => {
             {["instagram", "twitter", "facebook"].map((item, index) => (
               <Link
                 key={index}
-                to="/coming-soon"
+                to="https://www.instagram.com/voigo.app/profilecard/?igsh=eGxwcXAxcGFjcXA5"
                 className="mt-2 block text-zinc-300 text-sm capitalize text-center sm:text-left"
               >
                 {item}
@@ -46,7 +46,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              to="/"
+              to={"/"}
               className="mt-2 block text-zinc-300 text-sm capitalize text-center sm:text-left"
             >
               About
