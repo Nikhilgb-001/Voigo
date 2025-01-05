@@ -31,7 +31,8 @@ const DeleteAccount = () => {
             <div className="mb-6">
               <h3 className="text-xl font-medium">Access Account Options</h3>
               <p>
-                On the app bar at the top right corner, you will see three dots.
+                On the app bar at the top right corner, you will see three
+                Lines.
               </p>
               <div className="mt-4 h-fit rounded-lg flex items-center justify-center">
                 {/* <image src="" /> */}
@@ -46,8 +47,8 @@ const DeleteAccount = () => {
             <div className="mb-6">
               <h3 className="text-xl font-medium">Open the Menu</h3>
               <p>
-                Click on the three dots to open a dropdown menu. Two options
-                will appear:
+                Click on the Settings icon to open the menu, Under the account
+                settings you can select:
                 <ul className="list-disc ml-6 mt-2">
                   <li>Logout</li>
                   <li>Delete Account</li>
@@ -55,8 +56,8 @@ const DeleteAccount = () => {
               </p>
               <div className="mt-4 h-fit rounded-lg flex items-center justify-center">
                 <img
-                  src="https://github.com/Nikhilgb-001/voigo/blob/main/frontend/src/assets/del-2.jpg?raw=true"
                   className="rounded-lg shadow-lg sm:w-1/2"
+                  src="https://github.com/Nikhilgb-001/voigo/blob/main/frontend/src/assets/del-3.jpg?raw=true"
                 />
               </div>
             </div>
@@ -65,22 +66,18 @@ const DeleteAccount = () => {
             <div className="mb-6">
               <h3 className="text-xl font-medium">Delete Your Account</h3>
               <p>
-                Select the "Delete Account" option to proceed. A confirmation
-                prompt will appear to ensure you want to delete your account.
+                Select the "Delete Account" option to proceed. Enter the
+                password to delete your account. And the account will be deleted permanently
               </p>
               <div className="mt-4 h-fit rounded-lg flex items-center justify-center">
-                <img
+                {/* <img
                   className="rounded-lg shadow-lg sm:w-1/2"
-                  src="https://github.com/thesolomon1331/Voigo/blob/main/frontend/src/assets/delete-image-4.jpeg?raw=true"
-                />
+                  src="https://github.com/Nikhilgb-001/voigo/blob/main/frontend/src/assets/del-3.jpg?raw=true"
+                /> */}
               </div>
             </div>
 
             {/* Step 5 */}
-            <div>
-              <h3 className="text-xl font-medium">Confirm Deletion</h3>
-              <p>Confirm your action to permanently delete your account.</p>
-            </div>
           </div>
 
           {/* Section for Delivery App */}
